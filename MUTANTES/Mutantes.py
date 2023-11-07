@@ -1,4 +1,3 @@
-
 from FuncionesMutantes import*
 
 print("    👽  <MAGNETO ESTÁ RECLUTANDO MUTANTES PARA LUCHAR CONTRA LOS X-MENS>  👽    ")
@@ -13,15 +12,15 @@ for i in range(6):
     row = input(f"Ingrese la fila {i+1}: ")
     row = row.upper()
     row = row.split(",")
+    valid = True
     # Verifico que la fila tenga 6 elementos
     if len(row) != 6:
       valid = False
     # Verifico que los valores sean válidos
-    valid = True
     for letter in row:
       if letter not in ["A", "T", "C", "G"]:
         print("La letra debe ser A, T, C o G.")
-        valid = False
+        valid = False 
         continue
     # Si la fila es válida la agrego a la matriz
     if valid:

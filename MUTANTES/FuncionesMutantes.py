@@ -17,7 +17,7 @@ def is_mutant(dna):
             # Busco secuencia diagonal ASCENDENTE 
             if i > 2 and j < 3 and letter == dna[i-1][j+1] == dna[i-2][j+2] == dna[i-3][j+3]:
                 count += 1
-            if count > 1:
-                return True
-            else:
-                return False
+    if count > 1:
+        return True
+    else:
+        return False
